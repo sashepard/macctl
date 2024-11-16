@@ -90,6 +90,8 @@ workload:
                 key: std
 persistence:
   data:
+    enabled: true
+    mountPath: "/data"
     volsync:
       - name: b2
         type: restic
@@ -100,6 +102,9 @@ persistence:
           enabled: true
 cnpg:
   main:
+    enabled: true
+    user: lldap
+    database: lldap
         # mode: recovery
     backups:
       enabled: true
