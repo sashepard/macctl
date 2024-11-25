@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - kubernetes-dashboard/ks.yaml
+  - qbt4kdown/ks.yaml
+  - qbt4kseed/ks.yaml
+  - plex/ks.yaml
+  - vaultwarden/ks.yaml
+  - scaleext/ks.yaml
+  - opnsnsext/ks.yaml
+  - proxext/ks.yaml
